@@ -17,7 +17,7 @@ const Login = () => {
     console.log({ email, password });
 
     axios
-      .post("http://localhost:3000/login", { email, password })
+      .post("http://localhost:10000/login", { email, password })
       .then((res) => {
         if (res.data && res.data.user) {
           localStorage.setItem("name", res.data.user.name);
@@ -79,13 +79,14 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="d-grid mb-4">
+            <div className="d-grid mb-1">
               <button className="btn btn-primary" type="submit">
                 LogIn
               </button>
             </div>
             <div>
-              <p className="mb-3">Create a new account</p>
+              <Link to="/forgotpassword">Forgot password??</Link>
+              <p className="mb-3 mt-3">Create a new account</p>
               <div className="d-grid">
                 <Link to="/create" className="btn btn-danger" type="submit">
                   SignUp

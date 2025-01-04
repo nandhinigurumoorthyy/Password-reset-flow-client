@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { GiDirectionSign } from "react-icons/gi";
-import Login from "./Login";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -19,7 +18,7 @@ function Signup() {
     console.log({ name, email, password });
 
     axios
-      .post("http://localhost:3000/create", { name, email, password })
+      .post("http://localhost:10000/create", { name, email, password })
       .then((res) => {
         console.log("Response:", res.data);
         navigate("/login");
@@ -29,7 +28,7 @@ function Signup() {
         // Navigate to the error page and pass the error message
         navigate("/error", {
           state: {
-            message: "Login failed! Please check your credentials.",
+            message: "Signup failed! Please check your credentials.",
             details: error.message,
           },
         });
