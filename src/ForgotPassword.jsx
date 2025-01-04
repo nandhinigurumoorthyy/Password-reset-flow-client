@@ -18,7 +18,7 @@ const ForgotPassword = () => {
     }
 
     axios
-      .post("http://localhost:10000/forgotpassword", { email })
+      .post("http://0.0.0.0:10000/forgotpassword", { email })
       .then((res) => {
         alert("Password reset link sent to your email");
         navigate("/login");

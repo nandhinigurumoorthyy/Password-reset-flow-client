@@ -13,7 +13,7 @@ const Resetpassword = () => {
    const handleSubmit = (e) => {
      e.preventDefault();
      axios
-       .post(`http://localhost:10000/resetpassword/${id}/${token}`, {
+       .post(`http://0.0.0.0:10000/resetpassword/${id}/${token}`, {
          password,
        })
        .then((res) => {

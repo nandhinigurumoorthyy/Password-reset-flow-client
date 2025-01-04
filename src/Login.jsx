@@ -17,7 +17,7 @@ const Login = () => {
     console.log({ email, password });
 
     axios
-      .post("http://localhost:10000/login", { email, password })
+      .post("http://0.0.0.0:10000/login", { email, password })
       .then((res) => {
         if (res.data && res.data.user) {
           localStorage.setItem("name", res.data.user.name);

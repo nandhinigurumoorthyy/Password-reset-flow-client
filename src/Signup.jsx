@@ -18,7 +18,7 @@ function Signup() {
     console.log({ name, email, password });
 
     axios
-      .post("http://localhost:10000/create", { name, email, password })
+      .post("http://0.0.0.0:10000/create", { name, email, password })
       .then((res) => {
         console.log("Response:", res.data);
         navigate("/login");
