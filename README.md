@@ -27,8 +27,8 @@ This repository contains the frontend code for a password reset flow application
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nandhinigurumoorthyy/Password-rest-flow-client.git
-   cd Password-rest-flow-client
+   git clone https://github.com/nandhinigurumoorthyy/Password-reset-flow-client.git
+   cd Password-reset-flow-client
    ```
 
 2. Install dependencies:
