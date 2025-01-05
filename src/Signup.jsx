@@ -18,7 +18,7 @@ function Signup() {
     console.log({ name, email, password });
 
     axios
-      .post("https://password-rest-flow-server.onrender.com/create", {
+      .post("https://password-reset-flow-server-0ne8.onrender.com/create", {
         name,
         email,
         password,

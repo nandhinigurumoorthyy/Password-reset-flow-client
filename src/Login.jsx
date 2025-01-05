@@ -17,7 +17,7 @@ const Login = () => {
     console.log({ email, password });
 
     axios
-      .post("https://password-rest-flow-server.onrender.com/login", {
+      .post("https://password-reset-flow-server-0ne8.onrender.com/login", {
         email,
         password,
       })
