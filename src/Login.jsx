@@ -17,7 +17,10 @@ const Login = () => {
     console.log({ email, password });
 
     axios
-      .post("http://0.0.0.0:10000/login", { email, password })
+      .post("https://password-rest-flow-server.onrender.com/login", {
+        email,
+        password,
+      })
       .then((res) => {
         if (res.data && res.data.user) {
           localStorage.setItem("name", res.data.user.name);

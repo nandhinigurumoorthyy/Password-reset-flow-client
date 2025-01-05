@@ -13,9 +13,12 @@ const Resetpassword = () => {
    const handleSubmit = (e) => {
      e.preventDefault();
      axios
-       .post(`http://0.0.0.0:10000/resetpassword/${id}/${token}`, {
-         password,
-       })
+       .post(
+         `https://password-rest-flow-server.onrender.com/resetpassword/${id}/${token}`,
+         {
+           password,
+         }
+       )
        .then((res) => {
          if (res.data.status === "Success") {
            navigate("/login");

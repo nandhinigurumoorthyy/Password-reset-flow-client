@@ -18,7 +18,9 @@ const ForgotPassword = () => {
     }
 
     axios
-      .post("http://0.0.0.0:10000/forgotpassword", { email })
+      .post("https://password-rest-flow-server.onrender.com/forgotpassword", {
+        email,
+      })
       .then((res) => {
         alert("Password reset link sent to your email");
         navigate("/login");
