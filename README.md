@@ -40,7 +40,7 @@ This repository contains the frontend code for a password reset flow application
    ```env
    VITE_API_URL=<your-backend-api-url>
    ```
-   Replace `<your-backend-api-url>` with the URL of your deployed backend (`https://password-reset-backend.onrender.com`).
+   Replace `<your-backend-api-url>` with the URL of your deployed backend (`https://password-reset-flow-server-0ne8.onrender.com`).
 
 4. Start the development server:
    ```bash
