@@ -1,10 +1,11 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
-
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -33,44 +34,221 @@
   }
 }
 
-.card {
-  padding: 2em;
+
+
+/* Full-screen container with background image */
+.signup-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Add background blur */
+.signup-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Adjust blur intensity */
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with transparency */
+  z-index: 1;
+}
+
+/* Form box styling */
+.form-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px); /* Glassmorphism effect */
+  max-width: 300px;
+  max-height: auto;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  font-size: small;}
+
+/* Form inputs with better visibility */
+.form-control {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #000;
+}
+
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Headings color */
+.card-title, .text-secondary {
+  color: #fff !important;
+}
+
+/* Adjust form padding and responsiveness */
+@media (max-width: 576px) {
+  .form-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
+
 
 .read-the-docs {
   color: #888;
 }
 
-.overlay{
-  position:absolute;
+.overlay {
   width: 100%;
-  height: 100%;
   z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
+  background-color: #0a0c10;
+  opacity: 0.7;
 }
 
-.custom-carousel{
+.custom-carousel {
   position: relative;
 }
 
-.slider-area .carousel-inner .carousel-item{
-  height: 100vh;
+.slider-area .carousel-inner .carousel-item {
+  background-color: #888;
 }
 
-.carousel-caption{
+.carousel-caption {
   padding-bottom: 250px;
 }
 
-.carousel-caption h5{
-  font-size: 50px;
+.carousel-caption h5 {
+  font-size:55px;
   text-transform: uppercase;
 }
 
-.carousel-control-prev{
+.carousel-control-prev,
+.carousel-control-next {
   background-image: none;
 }
 
-.carousel-control-next{
-  background-image: none;
+ol{
+  list-style-type: none;
+}
+
+img{
+  width: 100%;
+}
+
+.carousel {
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+}
+.logout-button button {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.logout-button button:hover {
+  background-color: #f8d7da;
+  color: black;
+}
+
+
+/* Adjust text for smaller screens */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+  .carousel-caption {
+    font-size: 14px;
+    bottom: 10px;
+  }
+  .logout-button {
+    top: 5px;
+    right: 10px;
+  }
+  .logout-button button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+ /* Ensure images are responsive */
+ .carousel-item img {
+  height: 100vh; 
+  width:100vh;
+object-fit: cover;
+}
+
+/* Ensure text is visible and responsive */
+.text-responsive {
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Adjust text for smaller screens */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+  }
+  .carousel-caption {
+    font-size: 1.2rem;
+    bottom: 20px;
+  }
+  .logout-button {
+    top: 5px;
+    right: 10px;
+  }
+  .logout-button button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .text-responsive {
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  .carousel-caption h5{
+    font-size: 2rem;
+    bottom: 10px;
+  }
+    .carousel-caption p{
+    font-size: 1rem;
+    bottom: 10px;
+  }
+  .logout-button button {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+  .text-responsive {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    font-size: xx-small;
+  }
+  .carousel-caption .home{
+    font-size: 1rem;
+  }
+  .btn{
+  padding: 2px 5px !important;
+  }
 }
