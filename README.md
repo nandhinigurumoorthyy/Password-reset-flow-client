@@ -5,6 +5,18 @@ This repository contains the frontend code for a password reset flow application
 
 ---
 
+## Deployed Links
+
+Frontend Live URL: https://password-reset-flow-client-ui.netlify.app
+
+----
+
+## GitHub Repositories
+
+Backend GitHub Repo: https://github.com/nandhinigurumoorthyy/Password-reset-flow-server
+
+---
+
 ## Features
 
 - User Signup
