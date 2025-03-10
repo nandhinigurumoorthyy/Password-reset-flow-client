@@ -59,11 +59,11 @@ const Resetpassword = () => {
             }}
           >
             <div className="card-body">
-              <h3 className="card-title mb-4 text-center fw-bold">
+              <h3 className="card-title mb-4 text-center">
                 Reset Password
               </h3>
               <div className="mb-4">
-                <label htmlFor="password" className="form-label text-dark">
+                <label htmlFor="password" className="form-label text-light">
                   New Password
                 </label>
                 <input
