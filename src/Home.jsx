@@ -5,6 +5,7 @@ import { IoLogIn } from "react-icons/io5";
 import "bootstrap/dist/css/bootstrap.min.css";
 import bg from "./assets/bg.jpg"
 import "./App.css"
+import { HiH3 } from "react-icons/hi2";
 
 const Home = () => {
   return (
@@ -15,12 +16,12 @@ const Home = () => {
   <div class="carousel-inner">
 <div className="carousel-item active">
   <img src={bg} alt="Background" className="w-100" />
-  <div className="carousel-caption d-block d-md-block text-responsive ">
-    <div>
-      <h1 className="fst-italic font-monospace home">
+  <div className="carousel-caption d-block d-md-block d-flex pb-0">
+    <div className=" text-responsive">
+      <h3 className="fst-italic font-monospace home">
         Experience the soul of India – where history whispers and culture breathes....
-      </h1>
-    </div>
+      </h3>
+    </div> 
     <div className="d-flex justify-content-center gap-3 mt-3">
       <Link to="/create" className="btn btn-danger btn-lg home">
         <GiDirectionSign className="me-2" />
@@ -30,7 +31,7 @@ const Home = () => {
         <IoLogIn className="me-2" />
         Log In
       </Link>
-    </div>
+      </div>
   </div>
 </div></div></div>
 
