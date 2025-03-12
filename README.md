@@ -52,8 +52,7 @@ Backend GitHub Repo: https://github.com/nandhinigurumoorthyy/Password-reset-flow
    ```env
    VITE_API_URL=<your-backend-api-url>
    ```
-   Replace `<your-backend-api-url>` with the URL of your deployed backend (`https://password-reset-flow-server-0ne8.onrender.com`).
-
+  
 4. Start the development server:
    ```bash
    npm run dev
