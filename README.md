@@ -73,7 +73,7 @@ Backend GitHub Repo: https://github.com/nandhinigurumoorthyy/Password-reset-flow
    - Add the following environment variable in the **Environment Variables** section of Netlify:
      - `VITE_API_URL=<your-backend-api-url>`
 3. Deploy your site.
-4. After deployment, Netlify will provide you with a URL (`https://password-reset-flow-client-ui.netlify.app`).
+4. After deployment, Netlify will provide you with a URL.
 
 ---
 
