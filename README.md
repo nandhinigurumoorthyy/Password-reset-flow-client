@@ -1,29 +1,35 @@
 
 # Password Reset Frontend
 
-This repository contains the frontend code for a password reset flow application. The frontend is built using **React** with **Vite**, styled with **Bootstrap**, and deployed on **Netlify**.
+A **user authentication system** built with **React (Vite)** that includes **signup, login, forgot password**, and **secure password reset via email**. After resetting the password through a secure link, users can log in and access the homepage. **Styled with Bootstrap** and **deployed on Netlify**, this repository contains the complete frontend code for the password reset flow.
 
 ---
 
 ## Deployed Links
 
-Frontend Live URL: https://password-reset-flow-client-ui.netlify.app
+👉 Frontend Live URL: https://password-reset-flow-client-ui.netlify.app
 
 ----
 
 ## GitHub Repositories
 
-Backend GitHub Repo: https://github.com/nandhinigurumoorthyy/Password-reset-flow-server
+- Backend GitHub Repo: https://github.com/nandhinigurumoorthyy/Password-reset-flow-server
 
+- 🌐Backend API: https://password-reset-flow-server-0ne8.onrender.com
 ---
 
-## Features
+## ✨ Features
 
-- User Signup
-- User Login
-- Password Reset
-- Responsive Design
-- Integration with Backend API
+* ✅ **User Signup & Login**
+* ✅ **Forgot Password Functionality**
+* ✅ **Password Reset via Email Link**
+* ✅ **Secure Login after Reset**
+* ✅ **Home Page after Successful Login**
+
+----
+
+📩 **Flow**:
+Forgot Password → Email Link → Reset Password → Login → Home
 
 ---
 
@@ -57,8 +63,6 @@ Backend GitHub Repo: https://github.com/nandhinigurumoorthyy/Password-reset-flow
    ```bash
    npm run dev
    ```
-
-   The application will run on `http://localhost:10000`.
 
 ---
 
