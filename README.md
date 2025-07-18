@@ -7,15 +7,15 @@ A **user authentication system** built with **React (Vite)** that includes **sig
 
 ## Deployed Links
 
-👉 Frontend Live URL: https://password-reset-flow-client-ui.netlify.app
+👉 [Frontend Live URL](https://password-reset-flow-client-ui.netlify.app)
 
 ----
 
 ## GitHub Repositories
 
-- Backend GitHub Repo: https://github.com/nandhinigurumoorthyy/Password-reset-flow-server
+- [Backend GitHub Repoitory](https://github.com/nandhinigurumoorthyy/Password-reset-flow-server)
 
-- 🌐Backend API: https://password-reset-flow-server-0ne8.onrender.com
+- 🌐[Backend API](https://password-reset-flow-server-0ne8.onrender.com)
 ---
 
 ## ✨ Features
